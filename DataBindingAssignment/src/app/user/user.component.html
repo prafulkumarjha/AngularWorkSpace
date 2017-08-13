@@ -1,0 +1,4 @@
+<label> username : </label>
+<input type="text" [(ngModel)]="username" (input)="onUpdateUser()" class="form-control">
+<p [innerText]="username"></p>
+<button class="btn btn-primary" (click)="onAddUser()" [disabled]="username.length === 0"> Add User </button>
