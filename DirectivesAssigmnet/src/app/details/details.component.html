@@ -1,0 +1,16 @@
+<button class="btn btn-primary btn" (click)="onShowDetail()"> Show Display Details</button>
+
+
+
+<p> </p>
+<p></p>
+
+<p *ngIf="displayDetail">
+
+    Hey, This is a Display Details app. this paragraph will only be visible if you click Display button. Please Press the button to see the text. Hope you like it. Cheers!!!!
+
+</p>
+
+<p *ngFor="let count of btnClicks; let i = index" [ngStyle]="{backgroundColor: i>4? 'blue':'green'} " [ngClass]="{greaterThanFive:i>4}">{{ count }}. Love is Forever
+
+</p>
